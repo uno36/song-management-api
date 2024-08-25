@@ -17,7 +17,7 @@ services:
     depends_on:
       - db
     environment:
-      - MONGODB_URI=mongodb://127.0.0.1:27017/songsdb?directConnection=true&serverSelectionTimeoutMS=2000
+      - MONGODB_URI=mongodb://0.0.0.0:27017/songsdb?directConnection=true&serverSelectionTimeoutMS=2000
 
 volumes:
   mongo_data:
