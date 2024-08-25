@@ -1,7 +1,7 @@
-version: '3.9'
+version: '3.8'
 
 services:
-  db:
+  mongo:
     image: mongo:latest
     container_name: mongo_db
     ports:
@@ -13,11 +13,12 @@ services:
     build: .
     container_name: song_api
     ports:
-      - "3001:3001" 
+      - "3001:3001"
     depends_on:
-      - db
+      - mongo
     environment:
-      - MONGODB_URI=mongodb://0.0.0.0:27017/songsdb?directConnection=true&serverSelectionTimeoutMS=2000
+      - MONGODB_URI=mongodb://mongo:27017/songsdb?directConnection=true&serverSelectionTimeoutMS=2000
 
 volumes:
   mongo_data:
+    driver: local

@@ -6,7 +6,8 @@ COPY package*.json ./
 
 # Install dependencies
 RUN rm -rf node_modules/
-RUN npm install
+RUN npm install --only=production
+
 
 COPY . .
 
