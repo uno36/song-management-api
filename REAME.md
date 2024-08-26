@@ -80,7 +80,13 @@ This command will start the MongoDB container and the Node.js application contai
 
 Once the containers are up and running, the application will be accessible at:
 
-- **API Base URL**: `http://localhost:3001/api/songs`
+## Base URL
+
+### songs
+https://song-api-cmmf.onrender.com/api/songs
+
+### statistics
+https://song-api-cmmf.onrender.com/api/songs/stats
 
 You can use tools like [Postman](https://www.postman.com/) or `curl` to interact with the API.
 

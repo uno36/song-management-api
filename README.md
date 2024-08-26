@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project provides a RESTful API for managing songs in a MongoDB database. The API supports CRUD operations (Create, Read, Update, Delete) for songs, as well as retrieving statistics about the songs. The API is built using Express.js and Mongoose for MongoDB interaction.
+The API supports CRUD operations (Create, Read, Update, Delete) for songs, as well as retrieving statistics about the songs. The API is built using Express.js and Mongoose for MongoDB interaction.
 
 ## Features
 

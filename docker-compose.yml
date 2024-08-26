@@ -7,7 +7,7 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - mongo_data:/data/db
+      - mongo_data:/data/db      
 
   app:
     build: .
@@ -17,7 +17,7 @@ services:
     depends_on:
       - mongo
     environment:
-      - MONGODB_URI=mongodb://mongo:27017/songsdb?directConnection=true&serverSelectionTimeoutMS=2000
+      - MONGODB_URI=mongodb+srv://emmanuelutofa:UqMjL2sEepbpQ9LM@cluster0.ltak2ir.mongodb.net/?retryWrites=true&w=majority
 
 volumes:
   mongo_data:

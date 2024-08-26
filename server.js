@@ -7,14 +7,14 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const MONGODB_URI =
   process.env.MONGODB_URI ||
-  "mongodb://mongo:27017/songsdb?directConnection=true&serverSelectionTimeoutMS=5000"; 
+  "mongodb+srv://emmanuelutofa:UqMjL2sEepbpQ9LM@cluster0.ltak2ir.mongodb.net/?retryWrites=true&w=majority"; 
 
 app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB
 mongoose.connect(MONGODB_URI, {  
-  appName: 'mongosh+2.3.0',  
+  appName: 'Cluster0',  
 });
 
 const db = mongoose.connection;
