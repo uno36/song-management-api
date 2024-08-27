@@ -17,7 +17,7 @@ services:
     depends_on:
       - mongo
     environment:
-      - MONGODB_URI=mongodb+srv://emmanuelutofa:UqMjL2sEepbpQ9LM@cluster0.ltak2ir.mongodb.net/?retryWrites=true&w=majority
+      - MONGODB_URI=mongodb+srv://emmanuelutofa:UqMjL2sEepbpQ9LM@cluster0.ltak2ir.mongodb.net/songsdb?retryWrites=true&w=majority
 
 volumes:
   mongo_data:
